@@ -15,6 +15,7 @@ var array = [message1, message2, message3];
 //////////////////////////
 
 var x = document.querySelector("i");
+var something = new Audio('something.mp3');
 
 if (array.length === 0) {
 	document.getElementById("messages").innerHTML = "all done!";
@@ -24,7 +25,7 @@ if (array.length === 0) {
 i = 0;
 x.addEventListener("click", function () {
 
-
+	something.play();
 	x.classList.toggle("fa-envelope");
 	x.classList.toggle("fa-envelope-open");
 	x.classList.toggle("shake");
@@ -72,10 +73,15 @@ x.addEventListener("click", function () {
 
 
 
+
+
+
 const jsConfetti = new JSConfetti()
 
 
 var confetti = new Audio('confetti.mp3');
+
+
 document.getElementById("yes").addEventListener("click", function () {
 
 
@@ -141,3 +147,13 @@ document.getElementById("yes").addEventListener("click", function () {
 
 	
 })
+
+var no = document.getElementById("no");
+
+no.addEventListener("mouseover",function(){
+	no.classList.toggle("move-away-btn");
+	no.classList.add("no");
+})
+
+
+
