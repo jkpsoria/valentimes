@@ -1,1 +1,1 @@
-# v
+Static website for my love.
