@@ -1,1 +1,1 @@
-Static website for my love.
+Static website for the love of my life.
